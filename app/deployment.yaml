@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: hello-01-11-app
-        image: hellow-01-11-images:latest
+        image: us-central1-docker.pkg.dev/elastiq-internship-chanchal-01/hello/hellow-01-11-images:latest
         ports:
         - containerPort: 8080
