@@ -20,3 +20,5 @@ spec:
         image: us-central1-docker.pkg.dev/elastiq-internship-chanchal-01/hello/hellow-01-11-images:latest
         ports:
         - containerPort: 8080
+        env:
+          PORT: 8080
