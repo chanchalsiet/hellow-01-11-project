@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-01-11-app
+  labels:
+    app: hello-01-11-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hello-01-11-app
+  template:
+    metadata:
+      labels:
+        app: hello-01-11-app
+    spec:
+      containers:
+      - name: hello-01-11-app
+        image: hellow-01-11-images:latest
+        ports:
+        - containerPort: 8080
