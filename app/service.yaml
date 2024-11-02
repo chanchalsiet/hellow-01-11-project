@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-01-11-appdocker build -t my-app:latest .-service
+  name: hello-01-11-project-service
 spec:
   selector:
     app: hello-01-11-app
